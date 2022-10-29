@@ -658,13 +658,13 @@ html {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #4353ff;
+    background-color: steelblue;
     color: #fff;
     font-size: 16px;
     text-decoration: none;
   }
   .notification_bar:hover {
-    background-color: #3545ee;
+    background-color: steelblue;
   }
   .container {
     width: 90%;
@@ -719,7 +719,7 @@ html {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #4353ff;
+    background-color: steelblue;
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -728,7 +728,7 @@ html {
   }
   .button:focus,
   .button:hover {
-    background-color: #3545ee;
+    background-color: steelblue;
   }
   .button.cc-large {
     height: 60px;
@@ -807,7 +807,7 @@ html {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #1b1b1b;
+    background-color: #000;
     background-image: linear-gradient(
         170deg,
         rgba(14, 14, 14, 0) 85%,
