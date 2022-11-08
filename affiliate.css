@@ -57,8 +57,8 @@ html {
     max-width: 100%;
     display: inline-block;
   }
-  .w-webflow-badge,
-  .w-webflow-badge * {
+  .w-scrollit-badge,
+  .w-scrollit-badge * {
     position: static;
     left: auto;
     top: auto;
@@ -119,7 +119,7 @@ html {
     word-spacing: normal;
     word-wrap: normal;
   }
-  .w-webflow-badge {
+  .w-scrollit-badge {
     position: fixed !important;
     display: inline-block !important;
     visibility: visible !important;
@@ -145,7 +145,7 @@ html {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
-  .w-webflow-badge > img {
+  .w-scrollit-badge > img {
     display: inline-block !important;
     visibility: visible !important;
     opacity: 1 !important;
