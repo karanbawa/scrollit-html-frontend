@@ -382,6 +382,25 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+.scrollit-logo-style {
+  margin-right: 30px; 
+}
+@media screen and (max-width: 767px) {
+  .scrollit-logo-style {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.scrollit-width {
+  width: 102px;
+  margin-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .scrollit-width {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
 .w-nav-menu {
   position: relative;
   float: right;
