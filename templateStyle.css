@@ -1,4 +1,3 @@
-/*! CSS Used from: https://assets-global.website-files.com/5e593fb060cf87bbaf75dd20/css/template-marketplace.webflow.c99561ecb.min.css */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -749,7 +748,7 @@ li {
 .b-menu-icon__wrap {
   padding: 5px 8px;
 }
-.b-nav-webflow-logo {
+.b-nav-scrollit-logo {
   display: block;
   width: 84px;
 }
@@ -1120,14 +1119,14 @@ li {
   width: 100%;
   height: 1px;
 }
-.b-nav__webflow {
+.b-nav__scrollit {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
 }
-.b-nav__webflow.cc-logo {
+.b-nav__scrollit.cc-logo {
   margin-top: 1px;
 }
 .b-nav__shadow {
@@ -2529,7 +2528,7 @@ li {
   .b-menu-icon__wrap {
     padding-left: 0;
   }
-  .b-nav-webflow-logo {
+  .b-nav-scrollit-logo {
     width: 70px;
   }
   .b-nav__links {
@@ -2951,7 +2950,6 @@ li {
     grid-row-start: span 1;
   }
 }
-/*! CSS Used from: https://cdn.jsdelivr.net/gh/webflow/brand_studio@latest/global-brand-code/brand-style-mods.css */
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;

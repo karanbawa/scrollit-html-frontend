@@ -1,4 +1,3 @@
-/*! CSS Used from: https://assets-global.website-files.com/6052550fea8cd32aedd21459/css/webflow-about.webflow.bb84f7dbc.css */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -57,8 +56,8 @@ img {
   max-width: 100%;
   display: inline-block;
 }
-.w-webflow-badge,
-.w-webflow-badge * {
+.w-scrollit-badge,
+.w-scrollit-badge * {
   position: static;
   left: auto;
   top: auto;
@@ -119,7 +118,7 @@ img {
   word-spacing: normal;
   word-wrap: normal;
 }
-.w-webflow-badge {
+.w-scrollit-badge {
   position: fixed !important;
   display: inline-block !important;
   visibility: visible !important;
@@ -145,7 +144,7 @@ img {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.w-webflow-badge > img {
+.w-scrollit-badge > img {
   display: inline-block !important;
   visibility: visible !important;
   opacity: 1 !important;
@@ -2501,7 +2500,6 @@ li {
     grid-column-end: span 2;
   }
 }
-/*! CSS Used from: https://cdn.jsdelivr.net/gh/webflow/brand_studio@latest/global-brand-code/brand-style-mods.css */
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -2620,7 +2618,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-underline-position: under;
 }
-.w-webflow-badge {
+.w-scrollit-badge {
   z-index: 100 !important;
 }
 ::selection {
