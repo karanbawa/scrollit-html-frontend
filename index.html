@@ -207,7 +207,7 @@
     <section class="section u-position-relative wf-section">
       <div class="section-bg_75 cc-purple"></div>
       <div class="container u-z-index-1">
-        <div data-current="Designer" data-easing="ease-out-quart" data-duration-in="500" data-duration-out="0" class="persona-tabs w-tabs">
+        <div id="designer-tab" data-easing="ease-out-quart" data-duration-in="500" data-duration-out="0" class="persona-tabs w-tabs">
           <div class="persona-tabs_menu u-epic-shadow w-tab-menu" role="tablist"><a data-w-tab="Designer" class="persona-tabs_link w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
               <div><strong>Designers</strong></div>
               <div style="display: block;" class="persona-tabs_link-dot"></div>
@@ -216,7 +216,7 @@
               <div><strong>Marketers</strong></div>
               <div style="display:none" class="persona-tabs_link-dot"></div>
               <p style="height: 0px; opacity: 0;" class="persona-tabs_copy">Launch campaigns faster, supercharge your content marketing, and iterate faster with a tool that lets you own website publishing.</p>
-            </a><a data-w-tab="Developer" class="persona-tabs_link w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
+            </a><a id="developer-tab" class="persona-tabs_link w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
               <div><strong>Developers</strong></div>
               <div style="display:none" class="persona-tabs_link-dot"></div>
               <p style="height: 0px; opacity: 0;" class="persona-tabs_copy">Scrollit writes clean, semantic, standards-compliant code for you. Push projects further by easily integrating custom code or leveraging our CMS API.</p>
@@ -615,59 +615,70 @@
               <ol class="templates__goals-list">
                 
                   <li style="--reveal-delay: calc(1 * 0.05s);">
-                    
-                      <a class="templates__goal-link" href="/templates" property="item" typeof="WebPage" data-template-category="online-store" data-identifier="online-store" data-section="templates">
-                        <span property="name">Ecommerce <aside>→</aside></span>
-                      </a>
+
+                      <a
+                      class="templates__goal-link is-active text-link"
+                      data-image="./websiteTemplatesImages/ecom.jpg"
+                      >Ecommerce <aside>→</aside></a
+                    >
                     
                   </li>
                 
                   <li style="--reveal-delay: calc(2 * 0.05s);">
-                    
-                      <a class="templates__goal-link" href="/templates" property="item" typeof="WebPage" data-template-category="local-business" data-identifier="local-business" data-section="templates">
-                        <span property="name">Local Business <aside>→</aside></span>
-                      </a>
+
+                    <a
+                      class="templates__goal-link text-link"
+                      data-image="./websiteTemplatesImages/localbusiness.jpg"
+                      >Local Business <aside>→</aside></a
+                    >
                     
                   </li>
                 
                   <li style="--reveal-delay: calc(3 * 0.05s);">
-                    
-                      <a class="templates__goal-link" href="/templates" property="item" typeof="WebPage" data-template-category="portfolio" data-identifier="portfolio" data-section="templates">
-                        <span property="name">Portfolio <aside>→</aside></span>
-                      </a>
+
+                    <a
+                      class="templates__goal-link text-link"
+                      data-image="./websiteTemplatesImages/Portfolio.jpg"
+                      >Portfolio <aside>→</aside></a
+                    >
                     
                   </li>
                 
                   <li style="--reveal-delay: calc(4 * 0.05s);">
                     
-                      <a class="templates__goal-link" href="/templates" property="item" typeof="WebPage" data-template-category="blog" data-identifier="blog" data-section="templates">
-                        <span property="name">Travel <aside>→</aside></span>
-                      </a>
+                    <a
+                    class="templates__goal-link text-link"
+                    data-image="./websiteTemplatesImages/Travel.jpg"
+                    >Travel <aside>→</aside></a
+                  >
                     
                   </li>
-                
-                  <li style="--reveal-delay: calc(5 * 0.05s);">
+
+                  <li style="--reveal-delay: calc(4 * 0.05s);">
                     
-                      <a class="templates__goal-link is-active" href="/templates" property="item" typeof="WebPage" data-template-category="restaurant" data-identifier="restaurant" data-section="templates">
-                        <span property="name">Restaurant <aside>→</aside></span>
-                      </a>
-                    
+                    <a
+                    class="templates__goal-link text-link"
+                    data-image="./websiteTemplatesImages/physiotherapy.jpg"
+                    >HealthCare <aside>→</aside></a
+                  >
                   </li>
                 
-                  <li style="--reveal-delay: calc(6 * 0.05s);">
+                  <li style="--reveal-delay: calc(4 * 0.05s);">
                     
-                      <a class="templates__goal-link" href="/templates" property="item" typeof="WebPage" data-template-category="services" data-identifier="services" data-section="templates">
-                        <span property="name">Services <aside>→</aside></span>
-                      </a>
-                    
+                    <a
+                    class="templates__goal-link text-link"
+                    data-image="./websiteTemplatesImages/servicesrocketair.jpg"
+                    >Service <aside>→</aside></a
+                  >
                   </li>
                 
-                  <li style="--reveal-delay: calc(7 * 0.05s);">
+                  <li style="--reveal-delay: calc(4 * 0.05s);">
                     
-                      <a class="templates__goal-link" href="/templates" property="item" typeof="WebPage" data-template-category="personal-cv" data-identifier="personal-cv" data-section="templates">
-                        <span property="name">E-Learning <aside>→</aside></span>
-                      </a>
-                    
+                    <a
+                    class="templates__goal-link text-link"
+                    data-image="./websiteTemplatesImages/crypto.jpg"
+                    >Saas <aside>→</aside></a
+                  >
                   </li>
 
                     
@@ -682,41 +693,17 @@
                   
                   
                   </a>
-                  
-                  
-                         </div>
-                
+                  </div>         
               </ol>
-        
-              
+            </div>
+
+            <div class="templates__images">
+            <div class="templates__image is-loaded">
+              <img src="image1.jpg" />
+            </div>
+          </div>
         
             
-              
-            </div>
-        
-            <div class="templates__images">
-                  <div class="templates__image is-loaded" role="img" aria-label="Desktop version of the Altaloma template." tabindex="0" data-template-category="online-store" style="background-image: url(&quot;https://media-www.sqspcdn.com/images/components/templates/desktop/altaloma-2-750w.jpg&quot;);">
-                    <img data-load="false" data-use-bg-image="true" data-size-format="filename" data-image-dimensions="2331x1458" data-src="https://media-www.sqspcdn.com/images/components/templates/desktop/altaloma-2.jpg" alt="Desktop version of the Altaloma template." class="" data-image-resolution="750w" style="display: none;">
-                  </div> 
-                  <div class="templates__image is-loaded" role="img" aria-label="Desktop version of the Emmeline template." tabindex="0" data-template-category="local-business" style="background-image: url(&quot;https://media-www.sqspcdn.com/images/components/templates/desktop/emmeline-750w.jpg&quot;);">
-                    <img data-load="false" data-use-bg-image="true" data-size-format="filename" data-image-dimensions="2331x1458" data-src="https://media-www.sqspcdn.com/images/components/templates/desktop/emmeline.jpg" alt="Desktop version of the Emmeline template." class="" data-image-resolution="750w" style="display: none;">
-                  </div>
-                  <div class="templates__image is-loaded" role="img" aria-label="Desktop version of the Matsuya template." tabindex="0" data-template-category="portfolio" style="background-image: url(&quot;https://media-www.sqspcdn.com/images/components/templates/desktop/matsuya-2-750w.jpg&quot;);">
-                    <img data-load="false" data-use-bg-image="true" data-size-format="filename" data-image-dimensions="2331x1458" data-src="https://media-www.sqspcdn.com/images/components/templates/desktop/matsuya-2.jpg" alt="Desktop version of the Matsuya template." class="" data-image-resolution="750w" style="display: none;">
-                  </div>     
-                  <div class="templates__image is-loaded" role="img" aria-label="Desktop version of the Idrah template." tabindex="0" data-template-category="blog" style="background-image: url(&quot;https://media-www.sqspcdn.com/images/components/templates/desktop/idrah-750w.jpg&quot;);">
-                    <img data-load="false" data-use-bg-image="true" data-size-format="filename" data-image-dimensions="2331x1458" data-src="https://media-www.sqspcdn.com/images/components/templates/desktop/idrah.jpg" alt="Desktop version of the Idrah template." class="" data-image-resolution="750w" style="display: none;">
-                  </div>
-                  <div class="templates__image is-loaded is-active" role="img" aria-label="Desktop version of the Loam template." tabindex="0" data-template-category="restaurant" style="background-image: url(&quot;https://media-www.sqspcdn.com/images/components/templates/desktop/loam-750w.jpg&quot;);">
-                    <img data-load="false" data-use-bg-image="true" data-size-format="filename" data-image-dimensions="2331x1458" data-src="https://media-www.sqspcdn.com/images/components/templates/desktop/loam.jpg" alt="Desktop version of the Loam template." class="" data-image-resolution="750w" style="display: none;">
-                  </div>
-                  <div class="templates__image is-loaded" role="img" aria-label="Desktop version of the Growwell template." tabindex="0" data-template-category="services" style="background-image: url(&quot;https://media-www.sqspcdn.com/images/components/templates/desktop/growwell-750w.jpg&quot;);">
-                    <img data-load="false" data-use-bg-image="true" data-size-format="filename" data-image-dimensions="2331x1458" data-src="https://media-www.sqspcdn.com/images/components/templates/desktop/growwell.jpg" alt="Desktop version of the Growwell template." class="" data-image-resolution="750w" style="display: none;">
-                  </div>
-                  <div class="templates__image is-loaded" role="img" aria-label="Desktop version of the Faded template." tabindex="0" data-template-category="personal-cv" style="background-image: url(&quot;https://media-www.sqspcdn.com/images/components/templates/desktop/faded-750w.jpg&quot;);">
-                    <img data-load="false" data-use-bg-image="true" data-size-format="filename" data-image-dimensions="2331x1458" data-src="https://media-www.sqspcdn.com/images/components/templates/desktop/faded.jpg" alt="Desktop version of the Faded template." class="" data-image-resolution="750w" style="display: none;">
-                  </div>
-            </div>
           </div>
     </section>
     <section class="section cc-inspo wf-section">
@@ -1060,6 +1047,29 @@
   <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon929951705487"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon729774410672" width="0" height="0" alt="" ></div>
   <div id="drift-frame-chat" class="drift-conductor-item drift-frame-chat drift-frame-chat-align-right with-transition" aria-hidden="true" tabindex="-1" style="right: 12px; width: 400px !important; max-width: none; position: fixed; z-index: 2147483647; max-height: 0px; bottom: 88px; visibility: hidden; min-width: 320px; height: 100% !important; opacity: 0;"><iframe class="drift-frame-chat" scrolling="no" title="Drift Widget Chat Window" allow="autoplay; encrypted-media; fullscreen;" frameborder="0" src="https://js.driftt.com/core/chat?d=1&amp;region=US&amp;driftEnableLog=false&amp;pageLoadStartTime=1666716670764" style="background: transparent; width: 400px !important; max-width: 100%; height: 100%; border: none;" aria-hidden="true" tabindex="-1"></iframe></div>
   <div id="drift-frame-controller" class="drift-conductor-item drift-frame-controller drift-frame-controller-align-right" style="right: 24px; width: 76px !important; max-width: none; position: fixed; z-index: 2147483647; height: 0px !important; bottom: 24px;"><iframe class="drift-frame-controller" scrolling="no" title="Drift Widget Chat Controller" allow="autoplay; encrypted-media; fullscreen;" frameborder="0" src="https://js.driftt.com/core?d=1&amp;embedId=b7n85m9zerm8&amp;eId=b7n85m9zerm8&amp;region=US&amp;forceShow=false&amp;skipCampaigns=false&amp;sessionId=241c145b-809a-4501-99da-95b027b3ebb9&amp;sessionStarted=1666716677.736&amp;campaignRefreshToken=448acff6-a0fa-41b8-ab26-d242c7984b64&amp;hideController=false&amp;pageLoadStartTime=1666716670764&amp;mode=CHAT&amp;driftEnableLog=false&amp;secureIframe=false" style="background: transparent; width: 100%; max-width: 100%; height: 100%; border: none;"></iframe></div>
+  <script src="index.js"></script>
+  <script>
+    // Get all the text links
+    const textLinks = document.querySelectorAll(".text-link");
+    // Get the element that will contain the images
+    const imageContainer = document.querySelector(".templates__image");
+
+    // Add an event listener for the mouseenter event on each text link
+    textLinks.forEach((textLink) => {
+      textLink.addEventListener("mouseenter", (event) => {
+        textLink.classList.add('is-active');
+        // Get the image source from the data-image attribute of the text link
+        const imageSrc = event.target.dataset.image;
+
+        // Set the src attribute of the image to the new image source
+        imageContainer.querySelector("img").src = imageSrc;
+      });
+      textLink.addEventListener("mouseleave", (event) => {
+        textLink.classList.remove('is-active');
+      });
+    });
+
+  </script>
 </body>
 
 </html>
