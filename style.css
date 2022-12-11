@@ -2257,7 +2257,7 @@ strong {
 }
 .feature-item_player.cc-left {
   left: auto;
-  right: 12%;
+  right: -11%;
   background-color: transparent;
 }
 .feature-item_player.cc-left.cc-members {
@@ -2265,7 +2265,7 @@ strong {
   width: 145%;
 }
 .feature-item_player.cc-ecommerce {
-  left: 13%;
+  left: -11%;
 }
 .feature-item_player-aspect {
   position: relative;
