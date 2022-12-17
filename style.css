@@ -70,6 +70,9 @@ svg:not(:root) {
   cursor: pointer;
   border-radius: 0;
 }
+.width-set {
+  width: 100%;
+}
 .w-scrollit-badge,
 .w-scrollit-badge * {
   position: static;
