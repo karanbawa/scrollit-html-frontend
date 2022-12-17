@@ -4195,7 +4195,7 @@ strong {
     align-self: flex-start;
   }
   .section.cc-hero {
-    min-height: 200vh;
+    min-height: 100vh;
   }
   .header_title {
     line-height: 1.1;

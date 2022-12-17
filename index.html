@@ -175,34 +175,27 @@
       <div class="container u-z-index-1">
         <div data-easing="ease-out-quart" data-duration-in="500" data-duration-out="0" class="persona-tabs w-tabs">
           <div class="persona-tabs_menu u-epic-shadow w-tab-menu" role="tablist">
-            <a id="designer-tab" data-w-tab="Designer" class="persona-tabs_link w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
+            <a id="designer-tab" data-w-tab="Designer" class="persona-tabs_link w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
               <div><strong>Create a website</strong></div>
               <div style="display: block;" class="persona-tabs_link-dot"></div>
               <p style="opacity: 1; width: 284px;" class="persona-tabs_copy">Select and customize any website templates of your choice and curate it as you want.</p>
             </a>
-            
-            <a id="marketer-tab" data-w-tab="Marketing team" class="persona-tabs_link w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
+            <a id="marketer-tab" data-w-tab="Marketing team" class="persona-tabs_link w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-1" role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
               <div><strong>Sell anything</strong></div>
               <div style="display:none" class="persona-tabs_link-dot"></div>
               <p style="height: 0px; opacity: 0;" class="persona-tabs_copy">Use one platform to sell products to anyone, anywhere—in person with Point of Sale and online through your website, social media, and online marketplaces.</p>
             </a>
-            <a id="developer-tab" class="persona-tabs_link w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
+            <a id="developer-tab" class="persona-tabs_link w-inline-block w-tab-link" tabindex="-1" id="w-tabs-0-data-w-tab-2" role="tab" aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
               <div><strong>Manage your business</strong></div>
               <div style="display:none" class="persona-tabs_link-dot"></div>
               <p style="height: 0px; opacity: 0;" class="persona-tabs_copy">Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.</p>
             </a></div>
           <div class="persona-tabs_content w-tab-content">
-            <div data-w-tab="Designer" class="w-tab-pane w--tab-active" id="w-tabs-0-data-w-pane-0" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-0"><img loading="lazy" src="https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/6195387416b9eeec95b565fd_Ellipsis-2.6s-194px.gif" alt="" class="lottie-bg-loader">
-              <div class="persona-embed w-embed">
-                <dotlottie-player loop="" mode="normal" id="designer-player" style="width: 100%; height: 100%; position: absolute; top:0; left:0; right: 0; bottom: 0;" background="transparent">
-                </dotlottie-player>
-              </div>
+            <div data-w-tab="Designer" class="w-tab-pane w--tab-active" id="w-tabs-0-data-w-pane-0" role="tabpanel" aria-labelledby="design-tab">
+              <img src="./gifs/Create a website.gif" alt="create a website"/>
             </div>
-            <div data-w-tab="Marketing team" class="w-tab-pane" id="w-tabs-0-data-w-pane-1" role="tabpanel" aria-labelledby="marketer-tab"><img loading="lazy" src="https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/6195387416b9eeec95b565fd_Ellipsis-2.6s-194px.gif" alt="" class="lottie-bg-loader">
-              <div class="persona-embed w-embed">
-                <dotlottie-player loop="" mode="normal" id="marketer-player" style="width: 100%; height: 100%; position: absolute; top:0; left:0; right: 0; bottom: 0;" background="transparent">
-                </dotlottie-player>
-              </div>
+            <div data-w-tab="Marketing team" class="w-tab-pane" id="w-tabs-0-data-w-pane-1" role="tabpanel" aria-labelledby="marketer-tab">
+              <img src="./gifs/sell anything (1).gif" />
             </div>
             <div data-w-tab="Developer" class="w-tab-pane" id="w-tabs-0-data-w-pane-2" role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-2">
               <div class="u-position-relative"><img loading="eager" src="https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/61930bf08d83823508fa0782_Storyboards-Editor-Full-Product-13.svg" alt="">
@@ -1043,6 +1036,10 @@
     const personaTab = document.querySelectorAll('.persona-tabs_link-dot');
     const personaCopy = document.querySelectorAll('.persona-tabs_copy');
 
+    const createWebsiteTab = document.getElementById('w-tabs-0-data-w-pane-0');
+    const sellAnythingTab = document.getElementById('w-tabs-0-data-w-pane-1');
+    const manageBusinessTab = document.getElementById('w-tabs-0-data-w-pane-2');
+
     design.addEventListener('click', (event) => {
       personaTab[0].style = "display: block;";
       personaCopy[0].style = "opacity: 1; width: 284px;";
@@ -1050,6 +1047,9 @@
       personaCopy[1].style = "opacity: 0; width: 284px; height: 0px;";
       personaTab[2].style ="display: none;";
       personaCopy[2].style = "opacity: 0; width: 284px; height: 0px;";
+      createWebsiteTab.classList.add('w--tab-active');
+      sellAnythingTab.classList.remove('w--tab-active');
+      manageBusinessTab.classList.remove('w--tab-active');
     })
 
     marketing.addEventListener('click', (event) => {
@@ -1059,6 +1059,9 @@
       personaCopy[0].style = "opacity: 0; width: 284px; height: 0px;";
       personaTab[2].style ="display: none;";
       personaCopy[2].style = "opacity: 0; width: 284px; height: 0px;";
+      createWebsiteTab.classList.remove('w--tab-active');
+      sellAnythingTab.classList.add('w--tab-active');
+      manageBusinessTab.classList.remove('w--tab-active');
     })
 
     developers.addEventListener('click', (event) => {
@@ -1068,6 +1071,9 @@
       personaCopy[1].style = "opacity: 0; width: 284px; height: 0px;";
       personaTab[0].style ="display: none;";
       personaCopy[0].style = "opacity: 0; width: 284px; height: 0px;";
+      createWebsiteTab.classList.remove('w--tab-active');
+      sellAnythingTab.classList.remove('w--tab-active');
+      manageBusinessTab.classList.add('w--tab-active');
     })
 
   </script>
