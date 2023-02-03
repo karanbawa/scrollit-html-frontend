@@ -107,6 +107,7 @@
         </div>
       </div>
     </a>
+
     <div class="g-nav_scroll-trigger"></div>
     <header class="section cc-hero wf-section">
       <div class="container">
@@ -116,7 +117,7 @@
                 <div>Log in</div>
               </a><a href="contactus.html" class="nav-button cc-secondary cc-white w-inline-block">
                 <div>Contact sales</div>
-              </a><a id="continue-top" data-signup-cta="1" data-cta-position="top right" href="https://webscrollit.com/" target="_blank" class="nav-button cc-main cc-white w-inline-block">
+              </a><a id="myGetStartedBtn" data-signup-cta="1" data-cta-position="top right" target="_blank" class="nav-button cc-main cc-white w-inline-block">
                 <div>Get started<span class="cta-button_sub-text">&nbsp;— it's free</span></div>
               </a></div>
           </div>
@@ -137,6 +138,31 @@
         </div>
       </div>
     </header>
+        <!-- The Modal -->
+<div id="myGetStartedModal" class="getStartedModal">
+  <!-- Modal content -->
+  <div class="getstarted-modal-content">
+    <span class="close">&times;</span>
+    <div class="row">
+      <div class="col-md-12">
+          <h1 style="font-size: 25px"> Contact Us </h1>
+          <fieldset>
+            <legend><span class="number">1 </span>Please provide details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" value="">
+            <label for="email">Email:</label>
+            <input type="email" id="mail" name="user_email" value="">
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone_number" value="">
+            <label for="message">Message:</label>
+            <textarea id="message" name="user_bio"value=""></textarea>
+            <button type="submit" onclick="testResults(this.form)">Send</button>  
+          </fieldset>
+          </div>
+        </div>
+  </div>
+
+</div> 
     <div class="u-z-index-1 u-bg-white">
       <section class="section cc-logos wf-section">
         <div class="intro-logos_overflow">
