@@ -6,6 +6,7 @@
     <link rel="icon" href="scrollit_S_logo.png" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="contactus.css" />
+    <link rel="stylesheet" href="contactUsForm.css" />
   </head>
   <body>
     <div class="u-nav-section">
@@ -105,6 +106,28 @@
         </div>
       </div>
     </div>
+    <form class="form contact-form" action="https://api.univolenitsolutions.com/v1/form/scrollitFormMail">
+      <div>
+        <label class="form-label" for="name">Name <span style="color: red;">*</span></label>
+        <input class="form-control" id="name" name="name" type="text" required />
+      </div>
+      <div>
+        <label class="form-label" for="email">Email <span style="color: red;">*</span></label>
+        <input class="form-control" id="email" name="email" type="email" required />
+      </div>
+      <div>
+        <label class="form-label" for="phone">Phone Number <span style="color: red;">*</span></label>
+        <input class="form-control" id="phone" name="phone" type="phone" required />
+      </div>
+      <div>
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" required></textarea>
+      </div>
+      <div>
+        <button class="button" type="submit">Submit</button>
+        <button class="button" type="reset">Clear</button>
+      </div>
+    </form>
     <div class="section footer_light">
       <div class="container grid">
         <div class="footer_wrapper">
@@ -270,6 +293,7 @@
         </div>
       </div>
     </div>
+    <script src="contactForm.js"></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0EHTN7T5D"></script>
 <script>
